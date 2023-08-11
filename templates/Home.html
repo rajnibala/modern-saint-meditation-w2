@@ -11,33 +11,47 @@
   height: 720px;
  object-fit: cover;
   width:100%;
+  margin-bottom:16px;
 }
  </style>
  
 </head>
  <body> 
+   {% include 'nav.html' %}
+   <img class="img-fluid" id="banner" src="https://modern-saint-meditation--rajni-balabala.repl.co/static/msmbg.jpeg">
    <div class="container">
    <h1 class= "text-center">Namaskaram! Modern Saint Meditation Welcomes you!</h1>
-   <img class="img-fluid" 
-     id="banner" src="https://modern-saint-meditation--rajni-balabala.repl.co/static/msmbg.jpeg">
-<h2 class= "text-center mt-2 mb-4">Why Mental Health is Importent ?</h2>
-     <p class="lead" style="color: black;">
+
+     <div class="row" style="margin-bottom:16px">
+       <div class="col-md-6">
+<h2 class= "text-center mt-2 mb-4" >Why Mental Health is Importent ?</h2>
+         
+     <p class="lead" style="color:black;">
        Mental health holds paramount significance as it profoundly influences our overall well-being and quality of life. It dictates how we think, feel, and behave, impacting our relationships, work, and daily functioning. Prioritizing mental health is essential to foster resilience, cope with challenges, and experience life's joys. Just as physical health demands attention, nurturing mental health through self-care, support, and awareness is crucial for a balanced and fulfilling existence.
      </p>
-       
+       </div>
+       <!-- <div class="d-none d-md-block col-md-6"> write d-none if dont want images in medium devices -->
+       <div class=" d-md-block col-md-6">
+       <img src="static/chakra.jpeg" style="height:320px;border-radius:4px; margin-top:16px;">
+       <img src="static/bowl.jpeg" style="height:320px;border-radius:4px; margin-top:16px;">
+       </div>
    <h2 class= "text-center mt-2 mb-4">Open Programs</h2>
    <div>
 {% for Programs in Programs %}
 {% include 'Programsitem.html' %}
 {% endfor %}
    </div>
-   <div class= "text-center">Book an Appointment </div>
+       <h2 class= "text-center mt-2 mb-4">Book an Appointment</h2>
+   <div class= "text-center"> Just as physical health demands attention, nurturing mental health through self-care, support, and awareness is crucial for a balanced and fulfilling existence. </div>
  
 
      <div class="text-center mt-2 mb-4">
-   <button class="btn btn-primary btn-lg">Contact US</button>
-       <p class= "mt-4">Copyright 2022, MSM</p>
+  <a class="btn btn-primary btn-lg"
+    href="mailto: modernsaintmeditation1221@gmail.com ?subject=Question's%20about%20Programs&body=My%20Name%20%3A%20%3CYour%20name%20here%3E%0D%0A%0D%0AMy%20Contact%20Number%20%3A%20%3CYour%20contact%20number%20here%20%3A%20Optional%3E%0D%0A%0D%0AMy%20Question%20%3A%20%3CWrite%20your%20Questions%20here%3E%0D%0A%0D%0A%3CNote%20%3A%20%22Please%20don't%20hesitate%20to%20ask%20any%20questions.%20Your%20comfort%20is%20important%2C%20and%20we're%20here%20to%20help.%22%3E%0D%0A%0D%0A%0D%0A">Ask US</a>
      </div>
+       
       </div>
+     
+   {% include 'footer.html' %}
  </body>
 </html>
