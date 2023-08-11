@@ -5,13 +5,13 @@ PROGRAMS = [
     'id': 1,
     'title': 'Program1',
     'Package': 'Bengaluru, India',
-    'Fees': 'Rs. 10,00,000'
+    'Fees': 'Rs. 5,000'
   },
   {
     'id': 2,
     'title': 'Program2',
     'Package': 'Delhi, India',
-    'Fees': 'Rs. 15,00,000'
+    'Fees': 'Rs. 1500'
   },
   {
     'id': 3,
@@ -22,7 +22,7 @@ PROGRAMS = [
     'id': 4,
     'title': 'Programs4',
     'Package': 'San Francisco, USA',
-    'Fees': '$150,000'
+    'Fees': '1500'
   }
 ]
 
