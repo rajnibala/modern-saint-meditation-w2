@@ -1,4 +1,5 @@
-{ pkgs }: {
+{ pkgs }:
+ {
   deps = [
     pkgs.python310Full
     pkgs.replitPackages.prybar-python310
