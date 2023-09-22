@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify 
+from flask import Flask, render_template, jsonify
 from database import load_programs_from_db
 
 app = Flask(__name__)
@@ -10,7 +10,7 @@ def hello_MSM():
 
 @app.route("/api/Programs")
 def list_Programs():
-    programs = load_programs_from_db()  # Load programs here
+    programs = load_programs_from_db()  # Load programs from the database
     return jsonify(programs)
 
 if __name__ == "__main__":
