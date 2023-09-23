@@ -7,7 +7,6 @@ engine = create_engine(db_connection_string, connect_args={
         "ssl_ca": "/etc/ssl/cert.pem"
     }
 })
-
 def load_program_from_db():
     with engine.connect() as conn:
         result = conn.execute(text("SELECT * FROM program"))
